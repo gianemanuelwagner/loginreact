@@ -138,6 +138,35 @@ Este componente está diseñado para ser usado en cursos de React y es perfecto 
 - **Responsive Design**: Diseño adaptativo
 - **Accesibilidad**: Buenas prácticas de UX/UI
 
+## 🚀 Despliegue
+
+Este proyecto está configurado para desplegarse en múltiples plataformas:
+
+### Render
+1. Conecta tu repositorio de GitHub a Render
+2. Selecciona el tipo de servicio "Web Service"
+3. Render detectará automáticamente la configuración desde `render.yaml`
+4. El despliegue se realizará automáticamente
+
+### Vercel
+1. Conecta tu repositorio de GitHub a Vercel
+2. Vercel detectará automáticamente la configuración desde `vercel.json`
+3. El despliegue se realizará automáticamente
+
+### Netlify
+1. Conecta tu repositorio de GitHub a Netlify
+2. Netlify detectará automáticamente la configuración desde `netlify.toml`
+3. El despliegue se realizará automáticamente
+
+### Docker
+```bash
+# Construir la imagen
+docker build -t react-login-component .
+
+# Ejecutar el contenedor
+docker run -p 3000:3000 react-login-component
+```
+
 ## 📄 Licencia
 
 Este proyecto es de código abierto y está disponible bajo la licencia MIT.
